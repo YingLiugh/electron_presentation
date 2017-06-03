@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
       <meta charset="UTF-8">
       <title>Electron Workshop</title>
   </head>
   <body>
     <!--Add layouts here-->
+    <div id="main-container">
+      <textarea id="search" placeholder="Search Keywork"></textarea>
+      <div>
+        <img id="img-show" src="http://www.collegedegreesearch.net/wp-content/uploads/2014/02/search.png" />
+      </div>
+    </div>
   </body>
 
   <!--import our renderer file here-->
+  <script>
+    require('./renderer.js')
+</script>
 </html>
